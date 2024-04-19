@@ -8,7 +8,7 @@ jupyter: python3
 
 The aim of this is to create a program/library which will simulate and display the magnetic field of an electonic component. 
 
-''python
+'''python
 ```{python}
 #| label: fig-polar
 #| fig-cap: "A line plot on a polar axis"
