@@ -1,13 +1,10 @@
 [
   {
-    "objectID": "Pages/index.html",
-    "href": "Pages/index.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Magnetic Field Simulator",
     "section": "",
-    "text": "Magnetic Field Simulator\nThe aim of this is to create a program/library which will simulate and display the magnetic field of an electonic component.\nVolumetric Vector Field Analysis",
-    "crumbs": [
-      "Magnetic Field Simulator"
-    ]
+    "text": "Magnetic Field Simulator\nThe aim of this is to create a program/library which will simulate and display the magnetic field of an electonic component.\nVolumetric Vector Field Analysis"
   },
   {
     "objectID": "MagFieldSim.html",
