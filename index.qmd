@@ -2,4 +2,4 @@
 # Magnetic Field Simulator
 The aim of this is to create a program/library which will simulate and display the magnetic field of an electonic component. 
 
-[Volumetric Vector Field Analysis](../MagFieldSim.ipynb)
+[Volumetric Vector Field Analysis](MagFieldSim.ipynb)
