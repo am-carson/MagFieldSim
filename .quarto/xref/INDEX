@@ -4,5 +4,20 @@
   },
   "about.qmd": {
     "about.html": "ace9e550"
+  },
+  "MagFieldSim.ipynb": {
+    "MagFieldSim.html": "0bc4f9e1"
+  },
+  "Pages/VolumetricVectorFieldAnalysis.qmd": {
+    "VolumetricVectorFieldAnalysis.html": "8e0fbe9b"
+  },
+  "Pages/index.qmd": {
+    "index.html": "c89e172a"
+  },
+  "Pages/about.qmd": {
+    "about.html": "3336ca2f"
+  },
+  "Pages/MagFieldSim.ipynb": {
+    "MagFieldSim.html": "89b9a6db"
   }
 }

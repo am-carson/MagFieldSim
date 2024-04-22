@@ -2,19 +2,23 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "."
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-
+  sidebar:
+    
+    background: secondary
+    search: False
+    style: "floating"
+    contents: auto
+jupyter: python3
 format:
   html:
-    theme: cosmo
+    code-fold: true
+    theme: lux
     css: styles.css
     toc: true
+    html-math-method: katex
+   
 execute:
   freeze: auto
+  
 
 

@@ -1,0 +1,12 @@
+{
+  "hash": "64889a600f6be566339823fde05cd93b",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Magnetic Field Simulator\nformat:\n  html:\n    code-fold: true\n    toc: true\n    toc-depth: 2\n---\n\nThe aim of this is to create a program/library which will simulate and display the magnetic field of an electonic component. \n\n[Volumetric Vector Field Analysis](VolumetricVectorFieldAnalysis.qmd)\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
