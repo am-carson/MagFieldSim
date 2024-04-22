@@ -1,14 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 class Field(object):
-    def __init__(self,Dim=(10,10,10)):
+    def __init__(self,Dim=(10,10,10),corners=[[0,5],[10,5]],curr=1):
         self.coords= np.indices(Dim)
-        self.create_wire()
+        self.create_wire(corners,curr)
         self.views = [('XZ',   (90, -90, 0)),
          ('YZ',    (0, -90, 0)),
          ('XY',    (0,   0, 0)),
          ('PRO',   (45, 45, 0))]
-    def create_wire(self,corners=[[0,2],[5,2],[5,8],[10,8]],curr=1):
+    def create_wire(self,corners,curr):
         self.corners=corners
         self.curr = curr 
         self.wire = np.zeros(self.coords[0,:,:,:].shape, dtype=bool)
