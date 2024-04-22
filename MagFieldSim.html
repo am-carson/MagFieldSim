@@ -183,17 +183,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>f.draw_plot()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
-<pre><code>c:\Users\Tech\Documents\Repos\MagFieldSim\Field.py:50: RuntimeWarning: invalid value encountered in divide
-  bx += (u_0*self.curr*dl[0]* rx)/r**3 # i have to use numpy arrays
-c:\Users\Tech\Documents\Repos\MagFieldSim\Field.py:51: RuntimeWarning: invalid value encountered in divide
-  by += (u_0*self.curr*dl[1]* ry)/r**3
-c:\Users\Tech\Documents\Repos\MagFieldSim\Field.py:52: RuntimeWarning: invalid value encountered in divide
-  bz += (u_0*self.curr*dl[2]* rz)/r**3</code></pre>
+<pre><code>c:\Users\Tech\Documents\Repos\MagFieldSim\Field.py:62: RuntimeWarning: invalid value encountered in divide
+  bx = bx +((u_0*self.curr* ry)/r**3) # i have to use numpy arrays
+c:\Users\Tech\Documents\Repos\MagFieldSim\Field.py:63: RuntimeWarning: invalid value encountered in divide
+  by = by +((u_0*self.curr* rx)/r**3)
+c:\Users\Tech\Documents\Repos\MagFieldSim\Field.py:64: RuntimeWarning: invalid value encountered in divide
+  bz = bz +((u_0*self.curr* rz)/r**3)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(10, 10, 10)</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="MagFieldSim_files/figure-html/cell-3-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="MagFieldSim_files/figure-html/cell-3-output-3.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
