@@ -4,8 +4,8 @@ class Field(object):
     def __init__(self,Dim=(10,10,10),corners=[[0,5],[10,5]],curr=1):
         self.coords= np.indices(Dim)
         self.create_wire(corners,curr)
-        self.views = [('XZ',   (90, -90, 0)),
-         ('YZ',    (0, -90, 0)),
+        self.views = [('YZ',   (90, -90, 0)),
+         ('XZ',    (0, -90, 0)),
          ('XY',    (0,   0, 0)),
          ('PRO',   (45, 45, 0))]
     def create_wire(self,corners,curr):
@@ -65,11 +65,9 @@ class Field(object):
             
         # Make the direction data for the arrows
         print(bz.shape)
+        for plane, angles in self.views:
+            self.ax[plane].quiver(z, y,x,bz, -by,bx , length=0.5, normalize=True)
         
-        self.ax["XY"].quiver(spare, xz,yz,spare, bx, -1*by, length=0.5, normalize=True)
-        self.ax["YZ"].quiver(zx, spare,yx,bz, spare, -1*by, length=0.5, normalize=True)
-        self.ax["XZ"].quiver(zy, xy,spare,bz, bx, spare, length=0.5, normalize=True)
-        self.ax["PRO"].quiver(z, x,y,bz, bx, -1*by, length=0.5, normalize=True)
     def draw_plot(self):
         
         for plane, angles in self.views:
